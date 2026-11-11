@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState, type FormEvent } from 'react'
 import { Avatar, Label } from 'radix-ui'
 import { Link } from 'react-router'
-import { SpectrumPlayer } from '../components/SpectrumPlayer'
+import { WaveformPlayer } from '../components/WaveformPlayer'
 import {
   findClosestDeezerTrack,
   refreshDeezerTrackPreview,
@@ -385,7 +385,7 @@ export function HomePage() {
             <h2 id="now-playing-title">{selectedTrack.title}</h2>
             <p className="now-playing-artist">{selectedTrack.artist}</p>
             {activePreview?.trackId === selectedTrack.id && activePreview.url ? (
-              <SpectrumPlayer
+              <WaveformPlayer
                 key={selectedTrack.id}
                 src={activePreview.url}
                 title={`${selectedTrack.title} — ${selectedTrack.artist}`}

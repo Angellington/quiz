@@ -12,7 +12,6 @@
   "dependencies": {
     "radix-ui": "^1.8.1",
     "react": "^19.3.1",
-    "react-audio-spectrum": "^0.1.5",
     "react-dom": "^19.3.1",
     "react-hook-form": "^7.91.0",
     "react-router": "^8.5.1"

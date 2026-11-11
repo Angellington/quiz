@@ -1,7 +1,7 @@
 import { useState, type FormEvent } from 'react'
 import { Avatar, Collapsible, Label } from 'radix-ui'
 import { Link } from 'react-router'
-import { SpectrumPlayer } from '../components/SpectrumPlayer'
+import { WaveformPlayer } from '../components/WaveformPlayer'
 import { useDeezer, type DeezerTrack } from '../hooks/useDeezer'
 import { clearDeezerLibrary, readDeezerLibrary, saveDeezerTracks } from '../lib/deezerStorage'
 import './DeezerPage.css'
@@ -96,7 +96,7 @@ function TrackRow({
         </div>
       </div>
       {track.preview ? (
-        <SpectrumPlayer
+        <WaveformPlayer
           compact
           playbackGroup="deezer-search-results"
           src={track.preview}
